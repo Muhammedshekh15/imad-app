@@ -22,7 +22,7 @@ var articles = {
                This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
             </p>`
 },
-   'article-two': {
+    'article-two': {
         title:"Article two I Shaikh Muhammed",
         heading:" Article two",
         date:" Aug 20,2017",
@@ -31,17 +31,17 @@ var articles = {
                This is the content for my second article.
             </p>`
 },
-'article-three': {
-    title:"Article Three I Shaikh Muhammed",
-    heading:" Article Three",
-    date:" Aug 25,2017",
-    content:`   
-        <p>
-           This is the content for my third article.
-        </p>`
+    'article-three': {
+        title:"Article Three I Shaikh Muhammed",
+        heading:" Article Three",
+        date:" Aug 25,2017",
+        content:`   
+            <p>
+               This is the content for my third article.
+            </p>`
     }
 };
-function createTemplete (data) {
+function createTemplate (data) {
 var title = data.title;
 var date = data.date;
 var heading = data.heading;
