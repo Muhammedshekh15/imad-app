@@ -47,7 +47,7 @@ var date = data.date;
 var heading = data.heading;
 var content = data.content;
 
-var htmlTemplete = `
+var htmlTemplate = `
 <html>
     <head>
         <title>
@@ -75,9 +75,8 @@ var htmlTemplete = `
     </body>
   </html>
   `;
-  return htmltemplete;
+  return htmltemplate;
 }
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -86,7 +85,7 @@ app.get('/:articleName',function(req,res) {
     //articleName = article one
     //articles[articleName] = {} content object for article one
     var articleName = req.params.articleName;
-    res.send(createTemplete(articles[articleName]));
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
