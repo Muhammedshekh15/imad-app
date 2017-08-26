@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles = {
-'article-one': {
+   'article-one': {
   title:"Article one I Shaikh Muhammed",
   heading:" Article one",
   date:" Aug 17,2017",
@@ -22,23 +22,21 @@ var articles = {
            This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
        </p>`
 },
-'article-two': {
-    title:"Article Two I Shaikh Muhammed",
-  heading:" Article Two",
+   'article-two': {title:"Article two I Shaikh Muhammed",
+  heading:" Article two",
   date:" Aug 20,2017",
   content:`   
        <p>
            This is the content for my second article.
        </p>`
 },
-'article-three': { title:"Article Three I Shaikh Muhammed",
+   'article-three': { title:"Article Three I Shaikh Muhammed",
   heading:" Article Three",
   date:" Aug 25,2017",
   content:`   
        <p>
            This is the content for my third article.
-       </p>`
-    }
+       </p>`}
 };
 function createTemplete (data) {
 var title = data.title;
